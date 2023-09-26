@@ -1,0 +1,21 @@
+version: "3.4"
+
+services:
+  whisperX-service-gpu:
+    image: whisperx-service
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    environment:
+      - ASR_MODEL=large
+    ports:
+      - 9000:9000
+    volumes:
+      - cache-whisper:/root/.cache/whisper
+
+volumes:
+  cache-whisper:
