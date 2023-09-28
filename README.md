@@ -11,7 +11,7 @@ Current release (v1.0.0) supports following whisper models:
 
 - [whisperX](https://github.com/m-bain/whisperX)@[v3.1.1](https://github.com/m-bain/whisperX/releases/tag/v3.1.1)
 
-![Swagger UI](https://github.com/ahmetoner/whisper-asr-webservice/blob/main/docs/assets/img/swagger-ui.png?raw=true)
+![Swagger UI](https://github.com/chinaboard/whisperX-service/blob/master/docs/assets/img/swagger-ui.png?raw=true)
 
 Available ASR_MODELs are `tiny`, `base`, `small`, `medium`, `large`, `large-v1` and `large-v2`. Please note that `large` and `large-v2` are the same model.
 

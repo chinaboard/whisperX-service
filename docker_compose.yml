@@ -15,7 +15,7 @@ services:
     ports:
       - 9000:9000
     volumes:
-      - cache-whisper:/root/.cache/whisper
+      - cache-whisper:/root/.cache
 
 volumes:
-  cache-whisper:
+  cache-whisper: {}
