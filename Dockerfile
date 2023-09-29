@@ -19,7 +19,7 @@ WORKDIR /app
 
 RUN pip install -U pip==23.0.1 setuptools==66.1.1 --no-cache-dir
 
-COPY asr .
+COPY . .
 
 RUN pip install torch==2.0.1 torchvision==0.15.2  torchaudio==2.0.2 -i https://download.pytorch.org/whl/cu118 --no-cache-dir
 RUN pip install git+https://github.com/m-bain/whisperx.git --no-cache-dir
