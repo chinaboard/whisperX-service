@@ -11,6 +11,23 @@ Current release (v1.0.0) supports following whisper models:
 
 - [whisperX](https://github.com/m-bain/whisperX)@[v3.1.1](https://github.com/m-bain/whisperX/releases/tag/v3.1.1)
 
+## Usage
+
+WhisperX service now available on Docker Hub. You can find the latest version of this repository on docker hub for CPU and GPU.
+
+Docker Hub: <https://hub.docker.com/r/chinaboard/whisperx-service>
+
+For GPU:
+
+```sh
+docker pull chinaboard/whisperx-service:latest
+docker run -d --gpus all -p 9000:9000 -e ASR_MODEL=large chinaboard/whisperx-service:latest
+```
+
+```sh
+# Interactive Swagger API documentation is available at http://localhost:9000/docs
+```
+
 ![Swagger UI](https://github.com/chinaboard/whisperX-service/blob/master/docs/assets/img/swagger-ui.png?raw=true)
 
 Available ASR_MODELs are `tiny`, `base`, `small`, `medium`, `large`, `large-v1` and `large-v2`. Please note that `large` and `large-v2` are the same model.
