@@ -1,0 +1,32 @@
+name: Build
+
+on:
+  push:
+    branches: [ master ]
+
+permissions: # added using https://github.com/step-security/secure-workflows
+  contents: read
+
+env:
+  IMAGE_NAME: chinaboard/whisperx-service
+
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@v3
+
+      - name: Log into registry
+        uses: docker/login-action@343f7c4344506bcbf9b4de18042ae17996df046d # v3.0.0
+        with:
+          username: chinaboard
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push image
+        run: |
+          docker build -t ${{ env.IMAGE_NAME }} -f Dockerfile .
+          docker push ${{ env.IMAGE_NAME }}
