@@ -13,7 +13,7 @@ Current release (v1.0.0) supports following whisper models:
 
 ## Usage
 
-WhisperX service now available on Docker Hub. You can find the latest version of this repository on docker hub for CPU and GPU.
+WhisperX service now available on Docker Hub. You can find the latest version of this repository on docker hub for GPU.
 
 Docker Hub: <https://hub.docker.com/r/chinaboard/whisperx-service>
 
