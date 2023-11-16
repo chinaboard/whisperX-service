@@ -9,7 +9,7 @@ For any other documentation refer to [WhisperX readme](https://github.com/m-bain
 ## Features
 Current release (v1.0.0) supports following whisper models:
 
-- [whisperX](https://github.com/m-bain/whisperX)@[ba30365]([https://github.com/m-bain/whisperX](https://github.com/m-bain/whisperX/commit/ba30365344618fb9f26575d4d61162154ae50bc9))
+- [whisperX](https://github.com/m-bain/whisperX)@[ba30365](https://github.com/m-bain/whisperX](https://github.com/m-bain/whisperX/commit/ba30365344618fb9f26575d4d61162154ae50bc9))
 
 ## Usage
 
